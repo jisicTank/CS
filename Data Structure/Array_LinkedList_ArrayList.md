@@ -94,6 +94,12 @@ struct Node
 
 
 
+> 위에서는 단일 LinkedList를 다룸. LinkedList에는 이중 LinkedList, 원형 LinkedList등이 있으며, 다양한 LinkedList 유형 및 활용에 대해서는 아래 링크에서 확인
+
+[LinkedList 심화 학습하기](https://github.com/jisicTank/Programming-Interview)
+
+<br>
+
 ## ArrayList
 
 * LinkedList와 차별적으로 배열과 유사한 형태로 List 컬렉션을 관리하는 자료구조
