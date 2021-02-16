@@ -5,9 +5,13 @@
 * 입력과 출력이 한 곳(방향)으로 제한
 * LIFO(Last In First Out, 후입선출): 가장 나중에 들어온 것이 가장 먼저 나옴
 
+<br>
+
 ### 언제 사용할까?
 
 * 함수의 콜스택, 문자열 역순 출력, 연산자 후위표기법 등
+
+<br>
 
 ### Stack의 특징
 
@@ -16,20 +20,26 @@
 * 기본적으로 크기가 정적으로 구성되지만 `연결리스트, 동적 배열`을 활용해 `최대 크기가 존재하지 않도록 구현`할 수 있다.
 * 시간복잡도 삽입 O(1), 삭제 O(1), 탐색 O(n)
 
+<br>
+
 [java 코드로 스택 살펴보기](https://github.com/jisicTank/CS/tree/main/Data%20Structure/code)
 
+<br>
 
-
-
+<br>
 
 ## 큐(Queue)
 
 * 입력과 출력을 한 쪽 끝(front, rear)로 제한
 * FIFO(First In First Out, 선입선출): 가장 먼저 들어온 것이 가장 먼저 나옴
 
+<br>
+
 ### 언제 사용할까?
 
 * 버퍼, 마구 입력된 것을 처리하지 못하고 있는 상황, BFS
+
+<br>
 
 ### Queue의 특징
 
@@ -45,7 +55,7 @@
 
   
 
-
+<br>
 
 ### 원형 큐
 
@@ -54,6 +64,10 @@
 * 공백, 포화 상태를 쉽게 구분하기 위해 자리 하나를 항상 비워둠
 
 > (index + 1) % size로 순환시킨다
+
+
+
+<br>
 
 [java 코드로 큐 알아보기](https://github.com/jisicTank/CS/tree/main/Data%20Structure/code)
 
@@ -73,7 +87,7 @@
 
 * https://github.com/gyoogle/tech-interview-for-developer
 
-
+<br><br>
 
 ## Quiz 모범 답안
 
