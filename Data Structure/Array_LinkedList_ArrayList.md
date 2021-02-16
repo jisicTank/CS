@@ -33,13 +33,13 @@
 
 **JCF(자바 컬렉션 프레임워크) 계층구조**
 
-![jdchoi_20140220_JCF]($md-images/jdchoi_20140220_JCF-20210216002222366.png)
+![jdchoi_20140220_JCF-20210216002222366]($md-images/108017499-693d7380-7058-11eb-88c9-812e755fbd68.png)
 
 <br>
 
 **자바 컬렉션 프레임워크의 핵심 인터페이스간 상속계층도**
 
-![스크린샷 2021-02-16 오전 12.20.31]($md-images/sc1.png)
+<img width="1044" alt="sc1" src="https://user-images.githubusercontent.com/46706670/108017513-70648180-7058-11eb-8cdb-15b06467fd64.png">
 
 인터페이스 List와 Set을 구현한 컬렉션 클래스들은 서로 공통부분이 많아, 공통된 부분을 뽑아 Collection인터페이스를 정의했는데, Map 인터페이스는 이들과는 다른 형태로 컬렉션을 다루기 때문에 같은 상속계층도에 포함되지 못함.
 
@@ -47,7 +47,7 @@
 
 **List 인터페이스를 상속하는 컬렉션클래스(ArrayList, LinkedList)**
 
-![스크린샷 2021-02-16 오전 12.30.07]($md-images/cs2.png)
+<img width="1056" alt="cs2" src="https://user-images.githubusercontent.com/46706670/108017526-765a6280-7058-11eb-9908-4f6851cd8b23.png">
 
 <br>
 
@@ -55,7 +55,7 @@
 
 ## LinkedList
 
-![linked_list1]($md-images/linked_list1.png)
+![linked_list1]($md-images/108017580-94c05e00-7058-11eb-9302-3ccdca997625.png)
 
 * 연속적인 메모리 위치에 저장되지 않는 선형 데이터 구조(포인터로 연결)
 * 각 노드는 데이터 필드와 다음 노드에 대한 참조를 포함하는 노드로 구성(노드: 데이터부분+포인터부분)
@@ -106,7 +106,7 @@ struct Node
 
 > JCF 계층 구조를 보면 LinkedList는 AbstractSequentialList를 상속하고, ArrayList는 List 인터페이스를 구현한 AbstractList를 상속하고 있음
 
-![jdchoi_20140225_arrayvslinkedlist11]($md-images/jdchoi_20140225_arrayvslinkedlist11.png)
+![jdchoi_20140225_arrayvslinkedlist11]($md-images/108017591-99851200-7058-11eb-90b2-2b08752a9370.png)
 
 
 
@@ -141,25 +141,31 @@ struct Node
 
 ### ArrayList의 삽입/삭제
 
-![스크린샷 2021-02-16 오전 12.48.29]($md-images/cs3.png)
+<img width="784" alt="cs3" src="https://user-images.githubusercontent.com/46706670/108017620-a73a9780-7058-11eb-8981-c74a3cb52f75.png">
 
 <br>
 
 ### LinkedList의 삽입/삭제
 
-![스크린샷 2021-02-16 오전 1.04.14]($md-images/cs4.png)
+<img width="780" alt="cs4" src="https://user-images.githubusercontent.com/46706670/108017626-aefa3c00-7058-11eb-961e-d38223b2f74a.png">
+
+
 
 <br>
 
 ### ArrayList와 비교한 LinkedList의 장단점
 
-![스크린샷 2021-02-16 오전 1.05.13]($md-images/cs5.png)
+<img width="704" alt="cs5" src="https://user-images.githubusercontent.com/46706670/108017728-f97bb880-7058-11eb-83b5-00a9ca2ce724.png">
+
+
 
 <br>
 
 ### ArrayList와 LinkedList의 비교 성능(주의: 단위 omega가 아닌 theta임)
 
-![스크린샷 2021-02-16 오전 1.05.41]($md-images/cs6.png)
+<img width="655" alt="cs6" src="https://user-images.githubusercontent.com/46706670/108017738-fed90300-7058-11eb-832b-18f0d1d0ca8c.png">
+
+
 
 
 
@@ -189,7 +195,9 @@ struct Node
 
 https://devowen.com/285
 
-![스크린샷 2021-02-16 오전 1.20.31]($md-images/cs7.png)
+<img width="938" alt="cs7" src="https://user-images.githubusercontent.com/46706670/108017746-039db700-7059-11eb-9182-c95e3721b9fc.png">
+
+
 
 
 
@@ -197,4 +205,5 @@ https://devowen.com/285
 
 https://medium.com/@Aaron__Kim/%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-%EC%A4%80%EB%B9%84-db-os-nw-e03cdfe07966
 
-![스크린샷 2021-02-16 오전 1.21.22]($md-images/cs8.png)
+<img width="739" alt="cs8" src="https://user-images.githubusercontent.com/46706670/108017793-1ca66800-7059-11eb-95d7-d83a94b76e7b.png">
+
