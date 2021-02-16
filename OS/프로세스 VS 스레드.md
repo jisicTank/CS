@@ -63,7 +63,7 @@
 
 > 생성(create = new), 실행(running), 준비(ready), 대기(waiting), 종료(terminated) 
 
-![os-3](..\md-image\os-3.jpg)
+![os-3](https://user-images.githubusercontent.com/24764210/108018515-52e4e700-705b-11eb-907f-3cbdd3059b1a.jpg)
 
 그림에서 다섯개의 파란색 동그라미가 각각 프로세스의 상태입니다.
 

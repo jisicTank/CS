@@ -51,7 +51,7 @@
 
 #### 인터럽트 발생 처리 과정
 
-![os-3](..\md-image\os-4.png)
+![os-4](https://user-images.githubusercontent.com/24764210/108018517-52e4e700-705b-11eb-8569-51e516390607.png)
 
 주 프로그램이 실행되다가 인터럽트가 발생했다.
 
