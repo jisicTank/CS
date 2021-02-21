@@ -14,7 +14,7 @@
 
 - ### Computer Architecture
 
-  - 
+  - [CPU 동작원리](https://github.com/jisicTank/CS/blob/master/Computer%20Architecture/CPU%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)
   
   <br>
   
