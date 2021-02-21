@@ -1,0 +1,154 @@
+# SQL VS NoSQL
+
+## **[SQL(Structured Query Language)]**
+
+ **SQL**은 RDBMS(관계형 데이터베이스 관리 시스템)의 데이터를 관리하기 위해 설계된 프로그래밍 언어로, NoSQL보다 오래되고 많이 사용되어 왔다. SQL의 예시로는 MySQL, PostgreSQL 등이 있다.
+
+ 사실 SQL은 데이터베이스가 아니라 언어지만, SQL을 RDBMS의 의미로 사용하고 이야기하겠다.
+
+관계형 데이터베이스에는 두 가지 주요 특징이 있다.
+
+- 데이터는 **정해진(엄격한) 데이터 스키마**를 따라 데이터베이스 테이블에 저장됩니다.
+
+- 데이터는 **관계**를 통해서 연결된 **여러개의 테이블에 분산**됩니다.
+
+
+
+1. **엄격한 스키마**
+
+ 데이터는 테이블(table)에 레코드(record)로 저장되며, 각 테이블에는 명확하게 정의된 구조(structure)가 있다. 여기서 구조란, 어떤 데이터가 테이블에 들어가고 어떤 데이터가 그렇지 않을지를 정의하는 필드(field) 집합을 가르킨다. 
+
+<img src="https://blog.kakaocdn.net/dn/bzaTkz/btqFNQK86q1/UTJTesTZgKhy5kbvPoeKJK/img.png" alt="img" style="zoom:50%;" />
+
+ 만약 다음과 같은 Customers 테이블이 있다면 email 주소를 추가로 저장하거나 전화번호(Phone)가 없는 고객데이터를 추가하는 행동은 할 수 없다.  **SQL에서는 엄격한 스키마(데이터 저장 구조)를 원칙으로 하기 때문에 스키마에 맞지 않는 형식의 데이터는 저장할 수 없기 때문이다.**
+
+
+
+2. **관계**
+
+ SQL은 다음과 같이 데이터 사이의 관계를 지정할 수 있다.
+
+<img src="https://blog.kakaocdn.net/dn/bqdT4U/btqFPH66Lke/80rZaJ1LudbB1RUojBfNLk/img.png" alt="img" style="zoom:50%;" />
+
+ Orders 테이블을 보면, Customer ID와 Product ID를 통해 John이 연필을 12개 샀다는 것을 알 수 있다. 이처럼 **SQL은 각 테이블 간의 관계 지정을 통해 테이블을 접근할 수 있고, 따라서 중복없이 해당 데이터만을 다룰 수 있다.**
+
+
+
+## [NoSQL(Not Only Structured Query Language)]
+
+ **NoSQL**은 앞서 말한 SQL보다 덜 제한적인 모델을 이용해 데이터의 저장 및 검색 메커니즘을 제공한다. NoSQL의 예시로는 mongoDB, redis 등이 있다. 
+
+ NoSQL은 SQL과 반대되는 접근방식을 갖는다.
+
+- **스키마 없음**
+- **관계 없음**
+
+NoSQL 에서는 **레코드를 문서(documents)**라고 부르고 **테이블을 컬렉션(Collections)**라고 한다.
+
+<img src="https://t1.daumcdn.net/cfile/tistory/99FBC9415C937F2A20" alt="img" style="zoom:67%;" />
+
+1. **스키마 없음**
+
+ SQL 세상에서는 정해진 스키마를 따르지 않는다면 데이터를 추가 할 수 없지만, NoSQL에서는 다른 구조의 데이터를 같은 컬렉션(= SQL에서의 테이블)에 추가할 수 있다.
+
+![img](https://blog.kakaocdn.net/dn/cwQg8z/btqFNPleEKr/sxxB5LAhjTVPuO414dKnMK/img.png)
+
+ "John"의 문서(=document =SQL의 레코드)에 email key값을 추가한다고 해서, 다른 문서에 영향을 미치지 않는다. 따라서 NoSQL은 데이터의 구조가 같을 필요가 없다.
+
+
+
+2. **관계 없음**
+
+ NoSQL에서는 보통 하나의 컬렉션(SQL에서의 테이블)에 관련 데이터를 모두 작성합니다. John이 연필을 12개 샀을 때, Orders 컬렉션에는 주문 번호와 고객에 대한 정보, 상품에 대한 정보가 모두 들어가게 된다. 이때 SQL과 달리 id만을 저장하는 것이 아니라 고객 이름이나 전화번호 등 모든 정보를 저장하게 된다. 이렇게 해서 Customers와 Products를 보지 않고 Orders만으로 우리가 원하는 데이터를 모두 얻을 수 있다.
+
+<img src="https://blog.kakaocdn.net/dn/bacgVx/btqFPHeZ0uW/bfZy8A6IoZPQIlC97kXNd0/img.png" alt="img" style="zoom: 50%;" />
+
+ SQL과 다르게 중복된 데이터가 생기게 된다. 예를 들어 Customer에 John의 email을 추가했는데, Orders에는 이를 업데이트하지 않으면 문제가 발생한다. 
+
+
+
+## 확장성(Scalability)
+
+ 데이터베이스의 서버 확장성을 의미한다. 
+
+<img src="https://blog.kakaocdn.net/dn/oBYm1/btqFOje6loj/5JK76clgDH5eWHzQ4ubXC0/img.jpg" alt="img" style="zoom: 67%;" />
+
+### **[SQL(vertical scale)]**
+
+**SQL은 일반적으로 수직적 확장(vertical scale)만을 지원**한다. 수직적 확장은 **하드웨어를 업그레이드하거나 추가하여 서버의 성능을 향상**시키는 것을 말한다. (ex. CPU 업그레이드)
+
+ 
+
+### **[NoSQL(horizontal scale)]**
+
+반면에 **NoSQL에서는 수직적 확장과 더불어 수평적 확장(horizontal scale)이 가능**하다. **서버를 추가하면서 데이터베이스를 분산**시킬 수 있습니다. 따라서 하나의 데이터베이스에서 작동하지만 여러 호스트에서 작동할 수 있다.
+
+
+
+## SQL VS NoSQL
+
+![img](https://blog.kakaocdn.net/dn/opOQh/btqFNEYvfFf/C2lWIRvDsiJrQCon5oQbAk/img.png)
+
+
+
+## 둘 중 무엇을 선택해야할까?
+
+**어떤 데이터를 다루고, 어떤 애플리케이션에서 사용되는지 고려**
+
+
+
+**SQL의 장점**
+
+- 명확하게 정의 된 스키마, 데이터 무결성 보장
+
+- 관계는 각 데이터를 중복없이 한번만 저장된다.
+
+**NoSQL의 장점**
+
+- 스키마가 없기때문에, 훨씬 더 유연합니다. 즉, 언제든지 저장된 데이터를 조정하고 새로운 "필드"를 추가 할 수 있다.
+
+- 데이터는 애플리케이션이 필요로 하는 형식으로 저장됩니다. 이렇게 하면 데이터를 읽어오는 속도가 빨라진다.
+
+- 수직 및 수평 확장이 가능하므로 데이터베이스가 애플리케이션에서 발생시키는 모든 읽기 / 쓰기 요청을 처리 할 수 있다.
+
+
+
+**SQL의 단점**
+
+- 상대적으로 덜 유연합니다. 데이터 스키마는 사전에 계획되고 알려져야 합니다. (나중에 수정하기가 번거롭거나 불가능 할 수 도 있다.)
+
+- 관계를 맺고 있기 때문에, JOIN문이 많은 매우 복잡한 쿼리가 만들어 질 수 있다.
+
+- 수평적 확장이 어렵고, 대체로 수직적 확장만 가능하다. 즉 어떤 시점에서 (처리 할 수 있는 처리량과 관련하여) 성장 한계에 직면하게 된다.
+
+**NoSQL의 단점**
+
+- 유연성 때문에, 데이터 구조 결정을 하지 못하고 미루게 될 수 있다.
+
+- 데이터 중복은 여러 컬렉션과 문서가 (SQL 세계에서 처럼 하나의 테이블에 하나의 레코드가 아니라) 여러 개의 레코드가 변경된 경우 업데이트를 해야 한다.
+
+- 데이터가 여러 컬렉션에 중복되어 있기 때문에, 수정(update)를 해야 하는 경우 모든 컬렉션에서 수행해야 함을 의미한다. (SQL 세계에서는 중복된 데이터가 없기 때문에 한번만 수행하면 된다.)
+
+
+
+**SQL은 언제 사용하는 것이 좋을까요?**
+
+- 관계를 맺고 있는 데이터가 자주 변경(수정)되는 애플리케이션일 경우 (NoSQL에서라면 여러 컬렉션을 모두 수정해줘야만 합니다.)
+
+- 변경될 여지가 없고, 명확한 스키마가 사용자와 데이터에게 중요한 경우
+
+**NoSQL은 언제 사용하는 것이 좋을까요?**
+
+- 정확한 데이터 구조를 알 수 없거나 변경 / 확장 될 수 있는 경우
+
+- 읽기(read)처리를 자주하지만, 데이터를 자주 변경(update)하지 않는 경우 (즉, 한번의 변경으로 수십 개의 문서를 업데이트 할 필요가 없는 경우)
+
+- 데이터베이스를 수평으로 확장해야 하는 경우 ( 즉, 막대한 양의 데이터를 다뤄야 하는 경우)
+
+---
+
+### Reference
+
+- https://siyoon210.tistory.com/130
+- https://mjmjmj98.tistory.com/43
+
