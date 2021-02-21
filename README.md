@@ -24,6 +24,10 @@
 
   - [Stack과 Queue](https://github.com/jisicTank/CS/blob/main/Data%20Structure/Stack_Queue.md)
 
+  - [Tree](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Tree.md)
+
+  - [PriorityQueue와 Heap](https://github.com/jisicTank/CS/blob/master/Data%20Structure/PriorityQueue_Heap.md)
+
     
 
   <br>
