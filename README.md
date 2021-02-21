@@ -28,6 +28,8 @@
 
   - [PriorityQueue와 Heap](https://github.com/jisicTank/CS/blob/master/Data%20Structure/PriorityQueue_Heap.md)
 
+  - [이진탐색트리(Binary Search Tree)](https://github.com/jisicTank/CS/blob/master/Data%20Structure/BinarySearchTree.md)
+
     
 
   <br>
