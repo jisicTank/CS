@@ -6,7 +6,7 @@
   * 트리의 부분트리(Sub Tree) 또한 트리 구조를 따름
 * 사이클(cycle)이 존재하지 않음
 
-
+<br><br>
 
 ## 트리(Tree)의 활용
 
@@ -20,7 +20,7 @@
 * 최소 신장 트리(Minimum Spanning Tree)
 * 최소공통조상(Lowest Common Ancestor)
 
-
+<br><br>
 
 ## 트리(Tree)의 용어
 
@@ -67,13 +67,13 @@
   루트 노드에서 해당 노드까지 도달하는데 지나간 **<u>정점</u>**의 개수
   노드 중 가장 높이가 높은 노드의 높이를 **<u>트리의 높이</u>**라고 함
 
-
+<br><br>
 
 ## 이진 트리(Binary Tree)
 
 트리의 분지 수가 2 이하인 트리. 대부분의 트리 자료구조는 이진 트리 형태에서 나온다.
 
-
+<br>
 
 ### 이진 트리의 특징
 
@@ -84,8 +84,13 @@
   {2}^N-1
   $$
   
+* 
+
+<br>
 
 ### 이진 트리의 종류
+
+<br>
 
 #### 정 이진 트리(Full Binary Tree)
 
@@ -95,11 +100,15 @@
 
 * 모든 노드의 차수가 0 또는 2인 이진 트리
 
+<br>
+
 #### 포화 이진 트리(Perfect Binary Tree)
 
 ![perfectTree]($md-images/108624083-df414080-7485-11eb-956d-a6b3ef8f7da9.jpeg)
 
 ▲ 출처 : https://jackpot53.tistory.com/7
+
+<br>
 
 * 정 이진 트리에서 모든 단말 노드(leaf)의 깊이가 같은 이진 트리
 
@@ -108,20 +117,18 @@
   {2}^H-1
   $$
   
-
 * 반대로 노드가 N개인 포화 이진 트리의 높이
   $$
   log_2(N+1)
   $$
   
-
 * 깊이가 D인 포화 이진 트리의 단말 노드(leaf) 개수
   $$
   {2}^D
   $$
   
 
-
+<br>
 
 #### 완전 이진 트리(Complete Binary Tree)
 
@@ -129,7 +136,13 @@
 
 ▲ 출처 : http://coj.uci.cu/24h/problem.xhtml?pid=2958
 
+<br>
+
 * 마지막 레벨은 노드가 왼쪽에 몰려있고, 마지막 레벨을 제외하면 `포화 이진 트리` 구조를 띄고 있는 이진 트리
+
+
+
+<br>
 
 #### 사향(편향) 이진 트리(Skewed Binary Tree)
 
@@ -137,10 +150,12 @@
 
 ▲ 출처 : https://stackoverflow.com/questions/25627454/creating-a-right-skewed-binary-tree-in-c
 
+<br>
+
 * 연결리스트처럼 한 줄로 연결 되어 있는 형태의 이진 트리
 * 검색에 성능 이슈가 있어, 문제점을 극복하기 위해 AVL트리, 레드-블랙트리로 변화되어 활용
 
-
+<br>
 
 ### 이진 트리의 표현
 
@@ -153,7 +168,7 @@ class Node{
 }
 ```
 
-
+<br>
 
 * **연속 구조 - 일차원 배열을 이용한 구현**
 
@@ -177,15 +192,19 @@ private static int right_child(int index){
 
 
 
+<br>
+
 ### 이진 트리의 순회(Binary Tree Traversal)
 
 > 트리 구조의 데이터군에서 특정 데이터들을 삭제하고 싶어. 하지만 서브트리들을 어떻게 판별하고 삭제하지...?
 
-
+<br>
 
 * 트리는 비선형 자료구조이므로 모든 노드를 for문 한 번으로 방문이 불가능하다. 이런 트리 구조에서 모든 노드를 방문하기 위한 과정을 `트리의 순회`라고 한다.
 * 특히 이진 트리의 순회는 왼쪽 자식 탐색, 오른쪽 자식 탐색, 현재 노드의 방문의 세가지 주요 과정을 통해 진행되며, 노드를 방문하는 순서에 따라 **<u>전위 순회, 중위 순회, 후위 순회</u>**로 나뉜다.
 * 모든 순회는 **루트 노드**에서 시작한다.
+
+<br>
 
 <img width="765" alt="tree" src="https://user-images.githubusercontent.com/46706670/108623438-6db3c300-7482-11eb-8b91-f1f8a953231b.png">
 
@@ -197,7 +216,7 @@ private static int right_child(int index){
 >
 > 방문 순서 : A - B - D - E - H - C - F - G
 >
-> * **중위 순회(in-order)** -> 이진 탐색 트리에서 오름차순으로 노드 얻기
+> * **중위 순회(in-order)** -> [이진 탐색 트리](https://github.com/jisicTank/CS/blob/master/Data%20Structure/BinarySearchTree.md)에서 오름차순으로 노드 얻기
 >
 > 1. 왼쪽 자식  탐색
 > 2. 현재 노드 방문
@@ -215,7 +234,7 @@ private static int right_child(int index){
 
 3가지 순회 방법은 재귀를 통해 손쉽게 구현할 수 있음.
 
-
+<br>
 
 *** 순회 관련 문제
 
@@ -223,7 +242,7 @@ private static int right_child(int index){
 * [트리의 순회](https://www.acmicpc.net/problem/2263)
 * [이진 검색 트리](https://www.acmicpc.net/problem/5639)
 
-
+<br>
 
 ### 이진 트리의 응용
 
@@ -231,7 +250,7 @@ private static int right_child(int index){
 * 인덱스 트리(Indexed Tree) -> 누적합...
 * 트라이(Trie) -> 문자열 검색...
 
-## 
+<br><br>
 
 
 
@@ -239,7 +258,7 @@ private static int right_child(int index){
 
 * 최소 스패닝 트리에 대해 설명해주세요.
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 참고 자료
 
@@ -247,7 +266,7 @@ private static int right_child(int index){
 * https://jackpot53.tistory.com/7
 * https://prosaist0131.tistory.com/entry/%ED%8A%B8%EB%A6%AC%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC
 
-
+<br><br>
 
 ## Quiz 모범 답안
 
