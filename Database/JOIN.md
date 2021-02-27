@@ -72,9 +72,11 @@ INSERT INTO girl_group (id, name, debut) VALUES (girlgroup_seq.NEXTVAL,'에프�
 INSERT INTO girl_group (id, name, debut) VALUES (girlgroup_seq.NEXTVAL,'포미닛', '2009-08-28');
 ```
 
-<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\image-20210220210719690.png" alt="image-20210220210719690" style="zoom: 67%;" />
+<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\JOIN_1.png" alt="JOIN_1" style="zoom:80%;" />
 
-<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\image-20210220210747998.png" alt="image-20210220210747998" style="zoom: 67%;" />
+
+
+<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\JOIN_2.png" alt="JOIN_2" style="zoom:80%;" />
 
 - CROSS JOIN
 
