@@ -11,7 +11,7 @@
  논리적 에러를 이용한 SQL Injection. 로그인 페이지를 타겟으로 행해지는 공격으로 True/False의 논리적 연산 오류를 이용하여 로그인 인증 쿼리가 무조건 True가 나오게 인증을 무력화 시킨다.
  WHERE절에 **'or 1=1**이란 문구를 넣어주면서 무조건 참이 되는 쿼리문으로 인증을 해제한다.
 
-![image-20210227195709352](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210227195709352.png)
+![image-20210227195709352](https://user-images.githubusercontent.com/71415474/109386781-77d13800-7940-11eb-8d27-94d93f87d23f.png)
 
 ![img](https://t1.daumcdn.net/cfile/tistory/9958373C5C8890FA03)
 
@@ -28,7 +28,7 @@
 
 에러문을 통해 알아낼 수 있다. 해커들은 에러문을 유발시켜 그 정보를 활용해 여러가지 정보를 얻어낸다. 예를 들면 컬럼수 같은 경우 ORDER BY절을 이용하여 발생하는 에러문에서 컬럼수를 유추할 수 있다.
 
-![image-20210227203549992](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210227203549992.png)
+![image-20210227203549992](https://user-images.githubusercontent.com/71415474/109386788-861f5400-7940-11eb-80ef-4fe47bc08a7d.png)
 
 
 
