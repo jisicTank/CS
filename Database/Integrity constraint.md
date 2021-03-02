@@ -10,7 +10,7 @@
 
  Relation에서 기본키를 구성하는 속성(Attribute)는 Null 값이나 중복값을 가질 수 없다.
 
-![image-20210302133931159](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302133931159.png)
+<img src="https://user-images.githubusercontent.com/71415474/109600855-353a7600-7b61-11eb-99ab-e97842fcadcb.png" alt="image-20210302133931159" style="zoom: 67%;" />
 
 
 
@@ -18,7 +18,7 @@
 
  외래키 값은 Null이거나 참조 Relation의 기본키 값과 동일해야 함
 
-![image-20210302134018407](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302134018407.png)
+![image-20210302134018407](https://user-images.githubusercontent.com/71415474/109600888-4daa9080-7b61-11eb-97b2-6d176cb979bb.png)
 
 ### 3. 도메인 무결성
 
@@ -36,7 +36,7 @@
 
 : 한 Relation에는 최소한 하나의 키가 존재해야 한다.
 
-![image-20210302134134440](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302134134440.png)
+![image-20210302134134440](https://user-images.githubusercontent.com/71415474/109600916-58652580-7b61-11eb-8cff-1cd92d5d23eb.png)
 
 ---
 

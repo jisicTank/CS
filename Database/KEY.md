@@ -25,11 +25,7 @@
 - 한 릴레이션에서 특정 튜플을 유일하게 구별할 수 있는 속성.
 - 기본키로 정의된 속성(Attribute)에는 동일한 값이 중복되어 저장이 불가. (개체 무결성)
 
-
-
-<img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302132917946.png" alt="image-20210302132917946" style="zoom: 50%;" />
-
-
+<img src="https://user-images.githubusercontent.com/71415474/109600718-e260be80-7b60-11eb-9f8e-bfaeb08c69e0.png" alt="image-20210302132917946" style="zoom:50%;" />
 
 
 
@@ -40,7 +36,7 @@
 - **보조키** 라고도 함.
   Ex) <학생> Relation에서 학번이 기본키라면 남은 후보키 ‘주민번호’가 대체키
 
-<img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302132943917.png" alt="image-20210302132943917" style="zoom: 50%;" />
+<img src="https://user-images.githubusercontent.com/71415474/109600742-ee4c8080-7b60-11eb-9901-1e5e81b02681.png" alt="image-20210302132943917" style="zoom:50%;" />
 
 
 
@@ -51,7 +47,7 @@
 - Relation을 구성하는 모든 Tuple 중 슈퍼키로 구성된 속성의 집합과 동일한 값은 나타내지 않는다.
 - Relation 내 모든 Tuple에 대해 유일성은 만족하나, 최소성은 만족 X
 
-<img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302133059719.png" alt="image-20210302133059719" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/71415474/109600762-fc020600-7b60-11eb-87d8-656cd509a7e1.png" alt="image-20210302133059719" style="zoom: 50%;" />
 
 
 
@@ -62,9 +58,7 @@
 - 외래키는 참조되는 Relation의 기본키와 대응되어 Relation 간에 참조관계를 표현한다.
 - 외래키로 지정되면 참조하는 테이블의 기본키에 없는 값은 입력할 수 없다. (참조 무결성)
 
-
-
-<img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302133141357.png" alt="image-20210302133141357" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/71415474/109600778-07553180-7b61-11eb-94d3-36c863057e45.png" alt="image-20210302133141357" style="zoom:67%;" />
 
 ---
 

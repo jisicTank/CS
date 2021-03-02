@@ -13,7 +13,7 @@
 
 ### 2. SQL 구문 구별
 
-![image-20210302135630321](C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210302135630321.png)
+![image-20210302135630321](https://user-images.githubusercontent.com/71415474/109600828-22c03c80-7b61-11eb-81f8-84918036a62d.png)
 
 ---
 

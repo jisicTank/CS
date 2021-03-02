@@ -37,6 +37,9 @@
 - ### Database
 
   - [Database](https://github.com/jisicTank/CS/blob/master/Database/Database.md)
+  - [KEY](https://github.com/jisicTank/CS/blob/master/Database/KEY.md)
+  - [무결성 제약조건](https://github.com/jisicTank/CS/blob/master/Database/Integrity%20constraint.md)
+  - [SQL-DDL, DML, DCL](https://github.com/jisicTank/CS/blob/master/Database/SQL-DDL%2C%20DML%2C%20DCL.md)
   - [JOIN](https://github.com/jisicTank/CS/blob/master/Database/JOIN.md)
   - [SQL Injection](https://github.com/jisicTank/CS/blob/master/Database/SQL%20Injection.md)
   - [SQL vs NoSQL](https://github.com/jisicTank/CS/blob/master/Database/SQL%20VS%20NoSQL.md)
