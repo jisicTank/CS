@@ -21,7 +21,7 @@
 
 ### 트랜잭션의 상태
 
-<img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210307180935374.png" alt="image-20210307180935374" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/71415474/110240327-bdb87c80-7f8e-11eb-80b7-6c1e7fe426fe.png" alt="image-20210307180935374" style="zoom:67%;" />
 
 1. **활동(Active)**: 트랜잭션이 실행중인 상태
 2. **실패(Failed)**: 트랜잭션 실행에 오류가 발생하여 중단된 상태
@@ -65,19 +65,25 @@
 
    - **Redo(재수행)**: 장애가 발생하기 전에 트랜잭션이 **완료 명령을 수행(Commit)했을 경우**, 이 트랜잭션의 갱신 사항을 재수행하여 트랜잭션의 갱신이 영속성을 갖도록 해야 한다.
 
-     <img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210307184056610.png" alt="image-20210307184056610" style="zoom:67%;" />
+     <img src="https://user-images.githubusercontent.com/71415474/110240341-cdd05c00-7f8e-11eb-9b29-e2a4a2b4543d.png" alt="image-20210307184056610" style="zoom:67%;" />
 
    - **Undo(취소)**: 장애가 발생하기 전에 트랜잭션이 **완료 명령을 수행하지 못 했을 경우**, 원자성을 보장하기 위해서 트랜잭션이 데이터베이스에 반영했을 가능성이 있는 갱신 사항을 취소해야 한다. 
 
-     <img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210307183914993.png" alt="image-20210307183914993" style="zoom: 67%;" />
+     <img src="https://user-images.githubusercontent.com/71415474/110240363-e50f4980-7f8e-11eb-9447-f1f2b162457c.png" alt="image-20210307183914993" style="zoom:67%;" />
 
      
 
 4. 회복기법의 종류
 
    - **즉시 갱신(Immediate Update)**: 트랜잭션이 연상을 실행하고 있는 활동 상태에서 데이터의 변경 결과를 DB에 즉시 반영
+   
+      <img src="https://user-images.githubusercontent.com/71415474/110241034-0cb3e100-7f92-11eb-80bc-0f32bc9a6098.PNG" alt="1" style="zoom:50%;" />
    - **지연 갱신(Deferred Modification)**: 트랜잭션이 실행되는 동안 변경된 내용을 로그에 보관하다가 트랜잭션의 부분 완료 시점에 저장된 로그를 사용하여 변경 결과를 DB에 반영
+   
+      <img src="https://user-images.githubusercontent.com/71415474/110241050-26edbf00-7f92-11eb-9627-7b1ec5b8e6a4.PNG" alt="2" style="zoom:50%;" />
    - **검사시점(Check Point) 회복**:트랜잭션이 실행하는 동안 검사시점을 주기적으로 로그에 보관. 장애 발생 시 로그 내의 가장 최근의 검사시점으로부터 회복 작업을 수행
+   
+      <img src="https://user-images.githubusercontent.com/71415474/110241054-28b78280-7f92-11eb-9d6d-84f4064ede42.PNG" alt="3" style="zoom:50%;" />
    - **그림자 페이징(Shadow Paging)**: 트랜잭션이 실행되는 동안 로그를 사용하지 않고, DB를 일정 크기의 페이지와 복사본인 그림자 페이지로 보관한다.
       데이터 변경시 현 페이지 테이블만 변경하다가 장애를 회복할 시, 현 페이지 테이블을 그림자 페이지 테이블로 대체한다.
 
@@ -103,15 +109,23 @@
 2. **병행 수행의 문제점**
 
    - **갱신 분실(Lost Update)**: 두 개 아상의 트랜잭션이 같은 자료를 공유하여 갱신할 때 갱신 결과의 일부가 없어지는 현상
-   - **비완료 의존성(Uncommitted Dependency)**: 하나의 트랜잭션 수행이 실패한 후 회복되기 전에 다른 트랜잭션이 실패한 갱신 결과를 참조하는 현상.
+
+     <img src="https://user-images.githubusercontent.com/71415474/110242230-7800b180-7f98-11eb-905b-5b230792b99a.PNG" alt="4" style="zoom: 67%;" />
+   - **비완료 의존성(Uncommitted Dependency)**: 하나의 트랜잭션 수행이 실패한 후 회복되기 전에 다른 트랜잭션이 실패한 갱신 결과를 참조하는 현상. **(= Dirty Read)**
+
+     <img src="https://user-images.githubusercontent.com/71415474/110242233-79ca7500-7f98-11eb-9209-b4d6ee8d694f.PNG" alt="5" style="zoom: 67%;" />
    - **모순성(Inconsistency)**: 두 개의 트랜잭션 수행이 끝났지만, 원치 않는 연산 결과가 나타나고 데이터베이스 자체도 모순된 상태로 남게 된 현상
+
+     <img src="https://user-images.githubusercontent.com/71415474/110242236-7b943880-7f98-11eb-9915-ba5cf96a6df6.PNG" alt="6" style="zoom: 67%;" />
    - **연쇄 복귀(Cascading Rollback)**: 병행 수행되던 트랜잭션들의 하나에 문제가 생겨 Rollback하는 다른 트랜잭션도 함께 Rollback되는 현상
+
+     <img src="https://user-images.githubusercontent.com/71415474/110242238-7cc56580-7f98-11eb-89ee-b91e1f0ed768.PNG" alt="7" style="zoom: 67%;" />
 
 3. **병행제어 기법**
 
    - **로킹(Locking)-비관적제어**: 데이터의 액세스를 상호 배타적으로 만들어 병행을 제어하는 기법. 하나의 트랜잭션이 데이터를 액세스 하는 동안 다른 트랜잭션이 그 데이터 항목을 액세스할 수 없도록 한다.
 
-     <img src="C:\Users\oh12s\Desktop\면접스터디\SKILL\Oracle\image\image-20210307191250530.png" alt="image-20210307191250530" style="zoom:80%;" />
+     ![image-20210307191250530](https://user-images.githubusercontent.com/71415474/110240373-f0fb0b80-7f8e-11eb-96ae-d52b979e585b.png)
 
      - **2단계 로킹(2PL : Two-Phase Locking)**
        직렬성을 보장하는 대표적 잠금 기법. 잠금(Lock)과 잠금 해제(Unlock)를 아래의 2단계로 수행한다.
