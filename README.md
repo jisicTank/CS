@@ -30,6 +30,12 @@
 
   - [이진탐색트리(Binary Search Tree)](https://github.com/jisicTank/CS/blob/master/Data%20Structure/BinarySearchTree.md)
 
+  - [Hash](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Hash.md)
+
+  - [Trie](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Trie.md)
+
+  - [B-Tree, B+ Tree](https://github.com/jisicTank/CS/blob/master/Data%20Structure/B_Tree_BPlusTree.md)
+
     
 
   <br>
