@@ -78,13 +78,13 @@
 4. **회복기법의 종류**
 
    - **즉시 갱신(Immediate Update)**: 트랜잭션이 연상을 실행하고 있는 활동 상태에서 데이터의 변경 결과를 DB에 즉시 반영
-   
+
       <img src="https://user-images.githubusercontent.com/71415474/110241034-0cb3e100-7f92-11eb-80bc-0f32bc9a6098.PNG" alt="1" style="zoom:50%;" />
    - **지연 갱신(Deferred Modification)**: 트랜잭션이 실행되는 동안 변경된 내용을 로그에 보관하다가 트랜잭션의 부분 완료 시점에 저장된 로그를 사용하여 변경 결과를 DB에 반영
-   
+
       <img src="https://user-images.githubusercontent.com/71415474/110241050-26edbf00-7f92-11eb-9627-7b1ec5b8e6a4.PNG" alt="2" style="zoom:50%;" />
    - **검사시점(Check Point) 회복**:트랜잭션이 실행하는 동안 검사시점을 주기적으로 로그에 보관. 장애 발생 시 로그 내의 가장 최근의 검사시점으로부터 회복 작업을 수행
-   
+
       <img src="https://user-images.githubusercontent.com/71415474/110241054-28b78280-7f92-11eb-9d6d-84f4064ede42.PNG" alt="3" style="zoom:50%;" />
    - **그림자 페이징(Shadow Paging)**: 트랜잭션이 실행되는 동안 로그를 사용하지 않고, DB를 일정 크기의 페이지와 복사본인 그림자 페이지로 보관한다.
       데이터 변경시 현 페이지 테이블만 변경하다가 장애를 회복할 시, 현 페이지 테이블을 그림자 페이지 테이블로 대체한다.
