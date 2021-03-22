@@ -53,6 +53,7 @@
   - [Normalization & Anomaly](https://github.com/jisicTank/CS/blob/master/Database/%EC%A0%95%EA%B7%9C%ED%99%94(Nomalization)%20%26%20%EC%9D%B4%EC%83%81%ED%98%84%EC%83%81(Anomaly).md)
   - [Transaction](https://github.com/jisicTank/CS/blob/master/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98(Transaction).md)
   - [Transaction Isolation Level](https://github.com/jisicTank/CS/blob/master/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EA%B2%A9%EB%A6%AC%20%EC%88%98%EC%A4%80(Transaction%20Isolation%20Level).md)
+  - [Redis](https://github.com/jisicTank/CS/blob/master/Database/Redis.md)
 
   <br>
 
