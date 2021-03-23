@@ -71,8 +71,8 @@
   - [프로세스 vs 스레드](https://github.com/jisicTank/CS/blob/master/OS/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20VS%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
   - [PCB와 Context Switching](https://github.com/jisicTank/CS/blob/master/OS/PCB%20%26%20Context%20Switching.md)
   - [인터럽트(Interrupt)](https://github.com/jisicTank/CS/blob/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8(Interrupt).md)
-  - 
-  - 
+  - [DNS(Domain Name System)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
+  - [UDP(User Datagram Protocol)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
   
 
 <br>
