@@ -1,4 +1,4 @@
-# Redis
+# Redis(REmote Dictionary Server)
 
 ### 1. Radis?
 
@@ -13,6 +13,18 @@
  Redis는 Message Queue, Shared Memory, Remote Dictionary 용도로 사용할 수 있다. 특히 Remote Dictionary로서 RDBMS의 캐시 솔루션으로 사용 용도가 굉장히 높다. RDBMS에서 SELECT 쿼리문을 날려 특정 데이터들을 FETCH했을 때, RDBMS의 구조상 Memory에서 읽어들이는 것이 DISK에서 데이터를 꺼내오는 것보다 천배 가량 더 빠르기 때문. 
 
  이 때 Redis같은 유연한 자료구조를 가지는 인메모리 Key-value 솔루션을 사용하여 DB 부하의 Read 연산의 부하를 분산시키는 데 적용하는 것은 바람직한 것 같습니다. (DB 캐시 적중률을 높이면 되겠지만 어느 정도 한계가 있다고 생각합니다) 
+
+> Message Queue?
+>
+> 프로세스 또는 프로그램 인스턴스가 데이터를 서로 교환할때 사용하는 통신방법. 메시지 지향 미들웨어(MOM: Message Oriented Middleware)를 구현한 시스템.
+>
+> Shared memory ?
+>
+> 보통 프로세스에서 사용되는 메모리영역은 해당 프로세스만이사용할수 있다. 하지만 때때로 여러개의 프로세스가 특정 메모리영역을 사용했으면 하는때가 있을것이다. 
+>
+> System V IPC 설비중의 하나인 "공유메모리"를 통해서 이러한일을 할수있다.
+>
+> 출처: https://unabated.tistory.com/entry/공유-메모리-shared-memory [랄라라]
 
 <br>
 
