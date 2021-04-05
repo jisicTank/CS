@@ -210,7 +210,7 @@ ResultSet rs = stmt.executeQuery(query);
 - 안전한 코드
 
 ```java
-String query "SELECT * FROM users WHERE userid = ? + "AND password = ?";
+String query "SELECT * FROM users WHERE userid = ?" + AND password = ?";
 
 PrepareStatement stmt = connection.prepareStatement(query);
 stmt.setString(1, userid);
