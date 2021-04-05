@@ -62,6 +62,8 @@
   - [OSI 7 계층](https://github.com/jisicTank/CS/blob/master/Network/OSI7.md)
   - [TCP 3 & 4 Way Handshake](https://github.com/jisicTank/CS/blob/master/Network/TCP_Handshake.md)
   - [TCP 흐름제어 & 혼잡제어](https://github.com/jisicTank/CS/blob/master/Network/TCP_%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4_%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.md)
+  - [DNS(Domain Name System)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
+  - [UDP(User Datagram Protocol)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
   
   <br>
   
@@ -70,10 +72,8 @@
   - [운영체제란](https://github.com/jisicTank/CS/blob/main/OS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80.md)
   - [프로세스 vs 스레드](https://github.com/jisicTank/CS/blob/master/OS/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20VS%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
   - [PCB와 Context Switching](https://github.com/jisicTank/CS/blob/master/OS/PCB%20%26%20Context%20Switching.md)
-  - [인터럽트(Interrupt)](https://github.com/jisicTank/CS/blob/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8(Interrupt).md)
-  - [DNS(Domain Name System)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
-  - [UDP(User Datagram Protocol)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
-  
+  - [인터럽트(Interrupt)](https://github.com/jisicTank/CS/blob/master/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8(Interrupt).md)
+  - [교착상태(DeadLock)](https://github.com/jisicTank/CS/blob/master/OS/%EA%B5%90%EC%B0%A9%20%EC%83%81%ED%83%9C(DeadLock).md)
 
 <br>
 
@@ -83,11 +83,3 @@
   
 
 <br>
-
-## 📌 Design Pattern
-
-<br>
-
-## 📌 Interview
-
-- 
