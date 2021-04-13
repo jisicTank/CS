@@ -65,6 +65,8 @@
   - [DNS(Domain Name System)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
   - [UDP(User Datagram Protocol)](https://github.com/jisicTank/CS/blob/master/Network/DNS.md)
   - [HTTP와 공개키](https://github.com/jisicTank/CS/blob/master/Network/HTTPS%EC%99%80_%EA%B3%B5%EA%B0%9C%ED%82%A4.md)
+  - [NAT](https://github.com/jisicTank/CS/blob/master/Network/NAT.md)
+  - [로드밸런싱](https://github.com/jisicTank/CS/blob/master/Network/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1.md)
   
   <br>
   
