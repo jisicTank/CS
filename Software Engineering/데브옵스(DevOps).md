@@ -56,6 +56,12 @@
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F993E96495BC3B6B90ECD25" alt="img" style="zoom: 100%;" />
 
+> build: 소스코드 파일들을 컴퓨터에서 실행할 수 있는 소프트웨어로 변환하는 일련의 과정.
+>
+> release: 같은 제품을 새롭게 만드는 것. 예를 들어, ip address를 release  한다는 말은 새로 아이피 번호를 부여받는 의미고 제품에선 새로운 버전을 release한다고 할 때 사용한다.
+>
+> deploy: 프로그램 등을 서버와 같은 기기에 설치하여 작동가능하도록 만드는 일
+
 
 
 #### 데브옵스의 이점
