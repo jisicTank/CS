@@ -83,7 +83,12 @@
 
 - ### Software Engineering
 
-  - 
+  - Agile
+  - Agile 방법론
+  - Clean Code & Refactoring
+  - Clean Code & Secure Coding
+  - TDD(Test Driven Development)
+  - 데브옵스(DevOps)
   
 
 <br>
