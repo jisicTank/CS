@@ -94,7 +94,7 @@
 
 #### 정 이진 트리(Full Binary Tree)
 
-![tree1]($md-images/108624046-a4d7a380-7485-11eb-9ccf-28a1257b9bef.png)
+![tree1](https://user-images.githubusercontent.com/46706670/115101786-f120fa80-9f81-11eb-8435-9de80995fd46.png)
 
 ▲ 출처 : https://www.gatevidyalay.com/binary-tree-types-of-trees-in-data-structure/
 
@@ -104,7 +104,7 @@
 
 #### 포화 이진 트리(Perfect Binary Tree)
 
-![perfectTree]($md-images/108624083-df414080-7485-11eb-956d-a6b3ef8f7da9.jpeg)
+![perfectTree](https://user-images.githubusercontent.com/46706670/115101792-fa11cc00-9f81-11eb-982d-33125b1b3790.jpeg)
 
 ▲ 출처 : https://jackpot53.tistory.com/7
 
@@ -132,7 +132,7 @@
 
 #### 완전 이진 트리(Complete Binary Tree)
 
-![completeBinaryTree]($md-images/108624189-9a69d980-7486-11eb-985a-ae78a7677ef2.png)
+![completeBinaryTree](https://user-images.githubusercontent.com/46706670/115101797-0007ad00-9f82-11eb-99ae-eebe74d343bc.png)
 
 ▲ 출처 : http://coj.uci.cu/24h/problem.xhtml?pid=2958
 
@@ -146,7 +146,7 @@
 
 #### 사향(편향) 이진 트리(Skewed Binary Tree)
 
-![skewedTree]($md-images/108624108-05ff7700-7486-11eb-93b2-c00f6f5f9afe.png)
+![skewedTree](https://user-images.githubusercontent.com/46706670/115101800-085fe800-9f82-11eb-95f2-4bbf88f9e128.png)
 
 ▲ 출처 : https://stackoverflow.com/questions/25627454/creating-a-right-skewed-binary-tree-in-c
 
@@ -266,7 +266,7 @@ private static int right_child(int index){
 * https://jackpot53.tistory.com/7
 * https://prosaist0131.tistory.com/entry/%ED%8A%B8%EB%A6%AC%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC
 
-<br><br>
+<br><br><br><br><br><br>
 
 ## Quiz 모범 답안
 
