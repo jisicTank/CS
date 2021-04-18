@@ -77,6 +77,7 @@
   - [PCB와 Context Switching](https://github.com/jisicTank/CS/blob/master/OS/PCB%20%26%20Context%20Switching.md)
   - [인터럽트(Interrupt)](https://github.com/jisicTank/CS/blob/master/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8(Interrupt).md)
   - [교착상태(DeadLock)](https://github.com/jisicTank/CS/blob/master/OS/%EA%B5%90%EC%B0%A9%20%EC%83%81%ED%83%9C(DeadLock).md)
+  - [CPU 스케줄링](https://github.com/jisicTank/CS/blob/master/OS/CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md)
 
 <br>
 
