@@ -27,19 +27,12 @@
 - ### Data Structure
 
   - [Array & ArrayList & LinkedList](https://github.com/jisicTank/CS/blob/main/Data%20Structure/Array_LinkedList_ArrayList.md)
-
   - [Stack과 Queue](https://github.com/jisicTank/CS/blob/main/Data%20Structure/Stack_Queue.md)
-
   - [Tree](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Tree.md)
-
   - [PriorityQueue와 Heap](https://github.com/jisicTank/CS/blob/master/Data%20Structure/PriorityQueue_Heap.md)
-
   - [이진탐색트리(Binary Search Tree)](https://github.com/jisicTank/CS/blob/master/Data%20Structure/BinarySearchTree.md)
-
   - [Hash](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Hash.md)
-
   - [Trie](https://github.com/jisicTank/CS/blob/master/Data%20Structure/Trie.md)
-
   - [B-Tree, B+ Tree](https://github.com/jisicTank/CS/blob/master/Data%20Structure/B_Tree_BPlusTree.md)
 
     
