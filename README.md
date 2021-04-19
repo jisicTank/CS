@@ -2,7 +2,11 @@
 
 <br>
 
-### 👶🏻 면접을 위한 신입 개발자 전공 지식 📖
+### 신입 개발자 전공 지식 📖
+
+본 레파지토리는 Gyoogle님의 [신입 개발자 전공 지식 & 기술 면접 백과사전]을 기반으로 스터디 목적의 내용을 추가하고 정리한 공간입니다.
+
+배운 적이 없더라도 이해할 수 있도록 개념을 보다 쉽게 풀어쓰고, 설명을 추가해 자료를 작성합니다.
 
 <br>
 
@@ -67,6 +71,7 @@
   - [HTTP와 공개키](https://github.com/jisicTank/CS/blob/master/Network/HTTPS%EC%99%80_%EA%B3%B5%EA%B0%9C%ED%82%A4.md)
   - [NAT](https://github.com/jisicTank/CS/blob/master/Network/NAT.md)
   - [로드밸런싱](https://github.com/jisicTank/CS/blob/master/Network/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1.md)
+  - [Blocking & Non-blocking, Synchronous & Asynchronous](https://github.com/jisicTank/CS/blob/master/Network/Blocking%26Non-Blocking%2C%20Sync%26Async.md)
   
   <br>
   
