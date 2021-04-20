@@ -86,11 +86,13 @@
 - ### Software Engineering
 
   - [Agile](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/Agile.md)
-  - Agile 방법론
-  - Clean Code & Refactoring
-  - Clean Code & Secure Coding
-  - TDD(Test Driven Development)
-  - 데브옵스(DevOps)
+  - [Agile 방법론](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/Agile%20%EB%B0%A9%EB%B2%95%EB%A1%A0.md)
+  - [Clean Code & Refactoring](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/Clean%20Code%20%26%20Refactoring.md)
+  - [Clean Code & Secure Coding](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/Clean%20Code%20%26%20Secure%20Coding.md)
+  - [TDD(Test Driven Development)](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/TDD(Test%20Driven%20Development).md)
+  - [데브옵스(DevOps)](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4(DevOps).md)
+  - [마이크로서비스 아키텍처](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4.md)
+  - [써드 파티(3rd Party)](https://github.com/jisicTank/CS/blob/master/Software%20Engineering/%EC%8D%A8%EB%93%9C%20%ED%8C%8C%ED%8B%B0(3rd%20Party).md)
   
 
 <br>
