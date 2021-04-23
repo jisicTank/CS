@@ -2,11 +2,11 @@
 
 ### 조인(JOIN)
 
-두 개 이상의 테이블이나 데이터베이스를 연결하여 데이터를 조회하는 방법
+**두 개 이상의 테이블이나 데이터베이스를 연결하여 데이터를 조회**하는 방법
 
-테이블을 조인할 때는 적어도 하나의 컬럼을 서로 공유해야한다.
+테이블을 조인할 때는 **적어도 하나의 컬럼을 서로 공유**해야한다.
 
-
+<br>
 
 ---
 
@@ -20,7 +20,7 @@
   - RIGHT OUTER JOIN
   - FULL OUTER JOIN
 
-
+<br>
 
 예제를 통한 학습을 위하여 다음 테이블을 먼저 만들어 놓자.
 
@@ -72,13 +72,15 @@ INSERT INTO girl_group (id, name, debut) VALUES (girlgroup_seq.NEXTVAL,'에프�
 INSERT INTO girl_group (id, name, debut) VALUES (girlgroup_seq.NEXTVAL,'포미닛', '2009-08-28');
 ```
 
-<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\JOIN_1.png" alt="JOIN_1" style="zoom:80%;" />
+![JOIN_1](https://user-images.githubusercontent.com/71415474/115810869-a55ecd00-a429-11eb-869a-059329cf050e.png)
 
 
 
-<img src="C:\Users\oh12s\Desktop\TIL\Coding Test\md-image\JOIN_2.png" alt="JOIN_2" style="zoom:80%;" />
+![JOIN_2](https://user-images.githubusercontent.com/71415474/115810874-a7289080-a429-11eb-9644-98e14e7a336f.png)
 
-- CROSS JOIN
+<br>
+
+- **CROSS JOIN**
 
   > 교차조인, 데카르트 곱(Cartesian Product)이라고 하며 테이블 간에 연결될 수 있는 모든 경우의 수를 산출하여 나타낸다.  
 
@@ -95,11 +97,11 @@ SELECT S.ID, S.TITLE, GG.NAME
 FROM GIRL_GROUP GG, SONG S;
 ```
 
+<br>
 
+- **INNER JOIN**
 
-- INNER JOIN
-
-  > 교집합. 기준 테이블과 조인 테이블에서 공통된 요소들을 통해 결합하는 조인. 일반적으로 '조인'이라하면 INNER JOIN을 의미한다.
+  > **교집합**. 기준 테이블과 조인 테이블에서 공통된 요소들을 통해 결합하는 조인. **일반적으로 '조인'이라하면 INNER JOIN을 의미**한다.
 
 ![JOIN](https://t1.daumcdn.net/cfile/tistory/99799F3E5A8148D703)
 
@@ -116,9 +118,12 @@ FROM GIRL_GROUP GG, SONG S
 WHERE S.ID = GG.HIT_SONG_ID;
 ```
 
-- SELF JOIN
-  :  하나의 테이블을 여러번 복사해서 조인한다.
-- ![img](https://camo.githubusercontent.com/3600303a038c6cc6f6189738e96de0f791673b542f84c1895afa9b32a4fb6208/68747470733a2f2f696d67312e6461756d63646e2e6e65742f7468756d622f523132383078302f3f73636f64653d6d746973746f72793226666e616d653d687474702533412532462532466366696c6532352e75662e746973746f72792e636f6d253246696d61676525324639393334314433333541384133363344303631344538)
+<br>
+
+- **SELF JOIN**
+  :  **하나의 테이블**을 여러번 복사해서 조인한다.
+  
+  ![img](https://camo.githubusercontent.com/3600303a038c6cc6f6189738e96de0f791673b542f84c1895afa9b32a4fb6208/68747470733a2f2f696d67312e6461756d63646e2e6e65742f7468756d622f523132383078302f3f73636f64653d6d746973746f72793226666e616d653d687474702533412532462532466366696c6532352e75662e746973746f72792e636f6d253246696d61676525324639393334314433333541384133363344303631344538)
 
 ```SQL
 SELECT S1.TITLE, S2.ID
@@ -127,43 +132,49 @@ JOIN SONG S2
 ON S1.ID = S2.ID;
 ```
 
+<br>
 
-
-- OUTER JOIN
+- **OUTER JOIN**
   : 조인하는 여러테이블에서 한 쪽에는 데이터가 있고, 한 쪽에는 데이터가 없는 경우, 데이터가 있는 쪽 테이블의 내용을 모두 출력하는 것. 조인 조건(ON)에 맞지 않아도 해당하는 행을 출력.
 
   ![img](https://t1.daumcdn.net/cfile/tistory/26310B3458340C9F1C)
 
-  - LEFT OUTER JOIN
+  <br>
+  
+- **LEFT OUTER JOIN**
     : 왼쪽에 있는 테이블의 모든 결과를 가져온 후, 오른쪽 테이블 데이터를 매칭. 데이터가 없는 경우 NULL로 표시
-
+  
     ```SQL
     SELECT GG.ID, GG.NAME, S.TITLE
     FROM GIRL_GROUP GG
     LEFT OUTER JOIN SONG S
-    ON S.ID = GG.HIT_SONG_ID;
+  ON S.ID = GG.HIT_SONG_ID;
     ```
-
-  - RIGHT OUTER JOIN
+  
+  <br>
+    
+  - **RIGHT OUTER JOIN**
     : 오른쪽에 있는 테이블의 모든 결과를 가져온 후, 왼쪽 테이블 데이터를 매칭. 데이터가 없는 경우 NULL로 표시
-
+  
     ```SQL
     SELECT GG.ID, GG.NAME, S.TITLE
-    FROM GIRL_GROUP GG
+  FROM GIRL_GROUP GG
     RIGHT OUTER JOIN SONG S
     ON S.ID = GG.HIT_SONG_ID;
-    ```
-
-  - FULL OUTER JOIN
+  ```
+  
+    <br>
+    
+  - **FULL OUTER JOIN**
     : LEFT OUTER JOIN과 RIGHT OUTER JOIN을 합친 것으로, 양쪽 모두 조건이 일치하지 않는 것까지 모두 결합해 출력. 두 테이블이 가지고 있는 모든 데이터를 출력하므로 기준테이블은 사실 의미가 없다.
-
-    ```SQL
+  
+  ```SQL
     SELECT GG.ID, GG.NAME, S.TITLE
     FROM GIRL_GROUP GG
     FULL OUTER JOIN SONG S
     ON S.ID = GG.HIT_SONG_ID;
     ```
-
+  
     
 
 ---
