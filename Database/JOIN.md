@@ -141,18 +141,18 @@ ON S1.ID = S2.ID;
 
   <br>
   
-- **LEFT OUTER JOIN**
+  - **LEFT OUTER JOIN**
     : 왼쪽에 있는 테이블의 모든 결과를 가져온 후, 오른쪽 테이블 데이터를 매칭. 데이터가 없는 경우 NULL로 표시
   
-    ```SQL
-    SELECT GG.ID, GG.NAME, S.TITLE
-    FROM GIRL_GROUP GG
-    LEFT OUTER JOIN SONG S
+  ```SQL
+  SELECT GG.ID, GG.NAME, S.TITLE
+  FROM GIRL_GROUP GG
+  LEFT OUTER JOIN SONG S
   ON S.ID = GG.HIT_SONG_ID;
-    ```
+  ```
   
   <br>
-    
+  
   - **RIGHT OUTER JOIN**
     : 오른쪽에 있는 테이블의 모든 결과를 가져온 후, 왼쪽 테이블 데이터를 매칭. 데이터가 없는 경우 NULL로 표시
   
@@ -161,10 +161,10 @@ ON S1.ID = S2.ID;
   FROM GIRL_GROUP GG
     RIGHT OUTER JOIN SONG S
     ON S.ID = GG.HIT_SONG_ID;
-  ```
+    ```
   
-    <br>
-    
+   <br>
+  
   - **FULL OUTER JOIN**
     : LEFT OUTER JOIN과 RIGHT OUTER JOIN을 합친 것으로, 양쪽 모두 조건이 일치하지 않는 것까지 모두 결합해 출력. 두 테이블이 가지고 있는 모든 데이터를 출력하므로 기준테이블은 사실 의미가 없다.
   
@@ -173,9 +173,8 @@ ON S1.ID = S2.ID;
     FROM GIRL_GROUP GG
     FULL OUTER JOIN SONG S
     ON S.ID = GG.HIT_SONG_ID;
-    ```
+  ```
   
-    
 
 ---
 
