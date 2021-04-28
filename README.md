@@ -78,6 +78,7 @@
   - [CPU 스케줄링](https://github.com/jisicTank/CS/blob/master/OS/CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md)
   - [임계영역, 세마포어(Semaphore), 뮤텍스(Mutex)](https://github.com/jisicTank/CS/blob/master/OS/%EC%9E%84%EA%B3%84%EC%98%81%EC%97%AD%2C%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4(Semaphore)%2C%20%EB%AE%A4%ED%85%8D%EC%8A%A4(Mutex).md)
   - [페이징 & 세그먼테이션](https://github.com/jisicTank/CS/blob/master/OS/%ED%8E%98%EC%9D%B4%EC%A7%95%20%26%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98.md)
+  - [페이지 교체 알고리즘](https://github.com/jisicTank/CS/blob/master/OS/%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B5%90%EC%B2%B4%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
 <br>
 
